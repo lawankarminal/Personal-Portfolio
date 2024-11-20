@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i id="menu-icon" class="bi bi-list"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Minal Lawankar</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>I am a passionate and aspiring web developer with a strong foundation in HTML, CSS, and JavaScript. I
+                have a keen interest in creating interactive and user-friendly web applications and continuously strive
+                to learn and improve my skills. As a recent graduate, I am eager to bring my fresh perspective and
+                enthusiasm to a dynamic team where I can contribute to building innovative web solutions.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/minal-lawankar-4082b3215/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://x.com/LawankarMi61965" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/lawankar_minal/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/lawankarminal" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+            <a href="./public/imgs/Minal_Lawankar_Resume.pdf" target="_blank" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./public/imgs/cool-profile-pictures-retouching-1.webp" alt="">
+        </div>
+    </section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./public/imgs/cool-profile-pictures-retouching-1.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">I am a passionate and aspiring web developer with a strong foundation in HTML, CSS,
+                        and
+                        JavaScript. I have a keen interest in creating interactive and user-friendly web applications
+                        and continuously strive to learn and improve my skills. As a recent graduate, I am eager to
+                        bring my fresh perspective and enthusiasm to a dynamic team where I can contribute to building
+                        innovative web solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick=" openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick=" openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick=" openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Design</span><br>Designing mobile application interfaces.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Web Development Internship at Technical One</li>
+                            <li><span>2023</span><br>UI Full Stack Web Development training, NareshIT Hyderabad</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI Full Stack Web Development training, NareshIT Hyderabad</li>
+                            <li><span>2023</span><br>BE from Sipna College of Engineering And Tech Amravati</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bi bi-code-slash"></i>
+                <h3>Web Development</h3>
+                <p>Web app Development</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bi bi-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Designing Web/App Interfaces</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h3>App Design</h3>
+                <p>App design involves creating engaging and visually appealing mobile application interfaces.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="contacth2">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 Minal Lawankar. All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bi bi-chevron-up"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
